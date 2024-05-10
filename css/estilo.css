@@ -1,0 +1,134 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&display=swap');
+
+:root{
+    --cor1: #BDBFAA;
+    --cor2: #F2F2DF;
+    --cor3: #BFA07A;
+    --cor4: #A68365;
+    --cor5: #40281A;
+
+}
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: var(--cor2);
+    font-family: "Open Sans", sans-serif;
+}
+
+header{
+    background-image: linear-gradient(to top, var(--cor4), var(--cor3)); /*direção, cor que começa, cor que termina*/
+    min-height: 130px;
+    text-align: center;
+    padding-top: 30px;
+    margin-top: 20px;
+}
+
+header > h1{
+    color: var(--cor2);
+    font-weight: 800;
+    margin-bottom: 12px;
+}
+
+header > p{
+    color: var(--cor2);
+    font-weight: 500;
+}
+
+nav{
+    background-color: var(--cor4);
+    padding: 10px;
+    box-shadow: 0px 4px 4px #0000004a;
+}
+
+nav > a {
+    color: var(--cor2);
+    padding: 10px;
+    text-decoration: none;
+    font-weight: bold;
+    border-radius: 3px;
+    transition-duration: 0.5s;
+
+}
+
+nav > a:hover{
+    background-color: var(--cor3);
+}
+
+main{
+    background-color: var(--cor3);
+    color: var(--cor2);
+    min-width: 320px;
+    max-width: 1000px;
+    margin: auto;
+    margin-top: 3px;
+    padding: 20px;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    box-shadow: 3px 2px 5px 0;
+    text-align: center;
+
+}
+
+main h2{
+    background-image: linear-gradient(to right, var(--cor5), transparent);
+    margin-bottom: 15px;
+    margin-top: 15px;
+}
+
+main  p{
+    font-size: 1.2em;
+    text-align: justify;
+    text-indent: 20px;
+    margin: 15px 0;
+}
+
+main img {
+    width: 30%;
+    border: 10px solid black;
+}
+
+iframe{
+    width: 90%;
+    border: 10px double black;
+    margin-bottom: 10px;
+}
+
+pre{
+    font-size: 14px;
+
+}
+
+figcaption{
+    font-size: 10px;
+}
+
+aside{
+    background-color: var(--cor4);
+    padding: 20px 0;
+    border-radius: 5px;
+}
+
+aside > ul{
+    list-style-position: inside;
+    text-align: justify;
+    padding-top: 10px;
+}
+
+aside h3{
+    background-color: var(--cor5);
+    padding: 10px;
+    margin: -20px -0.4px 0px -0.5px;
+}
+
+footer p{
+    font-size: 14px;
+    padding: 0px;
+    text-align: center;
+}
